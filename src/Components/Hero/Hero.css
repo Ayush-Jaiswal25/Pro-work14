@@ -99,4 +99,11 @@
     .hero-title{
         margin-bottom: -5rem;
     }
+    .heroscroll{
+        cursor: pointer;
+        position: relative;
+        bottom: -2rem;
+        right: 1rem;
+        /* border: 2px solid yellow; */
+    }
 }
