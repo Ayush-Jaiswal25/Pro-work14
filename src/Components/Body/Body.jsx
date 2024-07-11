@@ -104,7 +104,7 @@ function Body() {
     
     function toastSubmitOTP(){setTimeout(stopy, 2200)
       function stopy(){
-        axios.post('http://localhost:3000/prowork/signup', {PhoneNumber})
+        axios.post('https://pro-work.onrender.com/prowork/signup', {PhoneNumber})
         .then(function (response){
 
           const waiting1 = new Promise(resolve => setTimeout(resolve, 1000));
@@ -126,7 +126,7 @@ function Body() {
           setOTP(true)
           unBLUR()
         
-          axios.get('http://localhost:3000/prowork/userdetails',)
+          axios.get('https://pro-work.onrender.com/prowork/userdetails',)
           .then(function (response){
             console.log(response.data[0].Name)
             setName(response.data[0].Name);
