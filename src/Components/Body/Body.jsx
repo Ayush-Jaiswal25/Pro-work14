@@ -208,7 +208,7 @@ function Body() {
 
           <div id='Body-routes' className="body-routes">
             <Routes location={location} key={location.pathname} >
-              <Route path='/prowork' element={<Home/>}/>
+              <Route path='/' element={<Home/>}/>
               <Route path='/prowork/services' element={<Service/>}/>
               <Route path='/prowork/explore' element={<Explore/>}/>
               <Route path='/prowork/about' element={<About/>}/>
