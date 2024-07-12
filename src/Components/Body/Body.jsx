@@ -117,8 +117,20 @@ axios.request(options).then(function (response) {
     
     function toastSubmitOTP(){setTimeout(stopy, 2200)
       function stopy(){
-        axios.post('https://pro-work.onrender.com/prowork/signup', {PhoneNumber})
-        .then(function (response){
+        // axios.post('https://pro-work.onrender.com/prowork/signup', {PhoneNumber})
+        // .then(function (response){
+        let options = {
+  method: 'POST',
+  url: 'https://pro-work.onrender.com/prowork/signup',
+  data: { PhoneNumber }
+  // headers: {Accept: '*/*', 'User-Agent': 'Thunder Client (https://www.thunderclient.com)'}
+};
+
+axios.request(options).then(function (response) {
+  console.log(response.data);
+}).catch(function (error) {
+  console.error(error);
+});
 
           const waiting1 = new Promise(resolve => setTimeout(resolve, 1000));
     toast.promise(
