@@ -119,18 +119,23 @@ axios.request(options).then(function (response) {
       function stopy(){
         // axios.post('https://pro-work.onrender.com/prowork/signup', {PhoneNumber})
         // .then(function (response){
+          
         let options = {
-  method: 'POST',
-  url: 'https://pro-work.onrender.com/prowork/signup',
-  data: { PhoneNumber }
-  // headers: {Accept: '*/*', 'User-Agent': 'Thunder Client (https://www.thunderclient.com)'}
-};
+            method: 'POST',
+            url: 'https://pro-work.onrender.com/prowork/signup',
+            data: { PhoneNumber }
+            headers: {
+              Accept: '*/*',
+              'Access-Control-Allow-Origin' : '*',
+              'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+            }
+        };
 
-axios.request(options).then(function (response) {
-  console.log(response.data);
-}).catch(function (error) {
-  console.error(error);
-});
+        axios.request(options).then(function (response) {
+          console.log(response.data);
+        }).catch(function (error) {
+          console.error(error);
+        });
 
           const waiting1 = new Promise(resolve => setTimeout(resolve, 1000));
     toast.promise(
