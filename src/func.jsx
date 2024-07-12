@@ -41,7 +41,8 @@ export function heroScroll(){
 export function heroScrollx(){
     const Body = document.getElementById(Body)
     window.scrollTo({top: 0, behavior: "smooth"})
-    axios.get('https://pro-work.onrender.com/')
+    axios.get('https://pro-work.onrender.com/');
+    console.log("MNMNMNMN");
 }
 
 export function homeBodyAnimation(){setTimeout(stop, 2000)
