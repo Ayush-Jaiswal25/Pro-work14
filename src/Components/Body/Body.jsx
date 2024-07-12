@@ -41,7 +41,20 @@ export function closeUserNav(){
 
 export let newNumber, OTP_Value1 ;
 function Body() {
+
+let options = {
+  method: 'GET',
+  url: 'https://pro-work.onrender.com/tax',
+  headers: {Accept: '*/*', 'User-Agent': 'Thunder Client (https://www.thunderclient.com)'}
+};
+
+axios.request(options).then(function (response) {
+  console.log(response.data);
+}).catch(function (error) {
+  console.error(error);
+});
  console.log("XXXXXXXXXXX");
+  
   const [OTP, setOTP] = useState(true)
   const [OTP_Value, setOTP_Value] = useState("")
   const [PhoneNumber, setPhoneNumber] = useState("")
