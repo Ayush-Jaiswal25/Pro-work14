@@ -10,13 +10,14 @@ const client = new Client()
 const account = new Account(client);
 
 export async function appwriteSendOTP(){
-    const token = await account.createPhoneToken(ID.unique(), newNumber);
-    userId = token.userId;
+    // const token = await account.createPhoneToken(ID.unique(), newNumber);
+    // userId = token.userId;
 }
 
 export async function appwriteSubmitOTP(){
-    const create_session = await account.createSession(userId, OTP_Value1);
-    sessionId = create_session.$id
+    // const create_session = await account.createSession(userId, OTP_Value1);
+    // sessionId = create_session.$id
+    sessionId = 25;
     
 }
 
