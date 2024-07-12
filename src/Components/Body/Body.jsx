@@ -41,7 +41,7 @@ export function closeUserNav(){
 
 export let newNumber, OTP_Value1 ;
 function Body() {
-
+ console.log("XXXXXXXXXXX");
   const [OTP, setOTP] = useState(true)
   const [OTP_Value, setOTP_Value] = useState("")
   const [PhoneNumber, setPhoneNumber] = useState("")
