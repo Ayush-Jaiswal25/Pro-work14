@@ -41,8 +41,7 @@ export function heroScroll(){
 export function heroScrollx(){
     const Body = document.getElementById(Body)
     window.scrollTo({top: 0, behavior: "smooth"})
-    axios.get('https://pro-work.onrender.com/');
-    console.log("MNMNMNMN");
+    
 }
 
 export function homeBodyAnimation(){setTimeout(stop, 2000)
@@ -59,6 +58,9 @@ export function homeBodyAnimation(){setTimeout(stop, 2000)
         const time2 = gsap.timeline({paused: true});
         const time3 = gsap.timeline({paused: true});
         const time4= gsap.timeline({paused: true});
+
+        axios.get('https://pro-work.onrender.com/');
+        console.log("MNMNMNMN");
  
         time1.fromTo(subbox1lefta, {y:0},{y: '3vh', x: '5vh', duration: 2, delay:0.5, ease: 'none'} );
         time2.fromTo(subbox1leftb, {y:0},{y: '3vh', x: '-5vh', duration: 2, delay:0.5, ease: 'none'} );
