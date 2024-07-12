@@ -45,7 +45,7 @@ function Body() {
 let options = {
   method: 'GET',
   url: 'https://pro-work.onrender.com/tax',
-  headers: {Accept: '*/*', 'User-Agent': 'Thunder Client (https://www.thunderclient.com)'}
+  // headers: {Accept: '*/*', 'User-Agent': 'Thunder Client (https://www.thunderclient.com)'}
 };
 
 axios.request(options).then(function (response) {
