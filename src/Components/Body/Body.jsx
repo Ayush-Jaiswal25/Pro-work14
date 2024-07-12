@@ -123,12 +123,8 @@ axios.request(options).then(function (response) {
         let options = {
             method: 'POST',
             url: 'https://pro-work.onrender.com/prowork/signup',
-            data: { PhoneNumber }
-            headers: {
-              Accept: '*/*',
-              // 'Access-Control-Allow-Origin' : '*',
-              // 'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-            }
+            data: { PhoneNumber },
+            headers: { 'Content-Type': 'application/json;charset=UTF-8', "Access-Control-Allow-Origin": "*", "Accept": "application/json" }
         };
 
         axios.request(options).then(function (response) {
