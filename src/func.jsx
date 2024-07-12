@@ -1,6 +1,7 @@
 import Lenis from 'lenis'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import axios from "axios";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,6 +41,7 @@ export function heroScroll(){
 export function heroScrollx(){
     const Body = document.getElementById(Body)
     window.scrollTo({top: 0, behavior: "smooth"})
+    axios.get('/')
 }
 
 export function homeBodyAnimation(){setTimeout(stop, 2000)
