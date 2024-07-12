@@ -126,8 +126,8 @@ axios.request(options).then(function (response) {
             data: { PhoneNumber }
             headers: {
               Accept: '*/*',
-              'Access-Control-Allow-Origin' : '*',
-              'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+              // 'Access-Control-Allow-Origin' : '*',
+              // 'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
             }
         };
 
